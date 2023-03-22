@@ -25,7 +25,6 @@ dev = [
 ]
 docs = [
    "jupyter-book",
-   "sphinx-autoapi"
 ]
 all = [
    "pycombinator[test]",

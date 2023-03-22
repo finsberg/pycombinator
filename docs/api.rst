@@ -1,8 +1,5 @@
 API Reference
 =============
 
-.. autosummary::
-   :toctree: _autosummary
-   :recursive:
-
-   pycombinator
+.. automodule:: pycombinator
+    :members:

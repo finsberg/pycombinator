@@ -7,17 +7,17 @@ W = TypeVar("W", bound=Callable)
 
 
 def Idiot(x: T) -> T:
-    """λx.x"""
+    """The Identity λx.x"""
     return x
 
 
 def MockingBird(x: W) -> W:
-    """λf.ff"""
+    """Self application λf.ff"""
     return x(x)
 
 
 def Cardinal(f: Callable[[U], Callable[[T], T]]) -> Callable[[T], Callable[[U], T]]:
-    """λfab.fba"""
+    """Flipping arguments λfab.fba"""
 
     def _Cardinal1(a: T) -> Callable[[U], T]:
         def _Cardinal2(b: U) -> T:

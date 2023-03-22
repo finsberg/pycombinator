@@ -29,15 +29,10 @@ parse:
 sphinx:
   config:
     html_last_updated_fmt: "%b %d, %Y"
-    autoapi_dirs: ['src']
-    # Ref: https://github.com/executablebooks/sphinx-external-toc/issues/36
-    suppress_warnings: ["etoc.toctree"]
 
   extra_extensions:
   - 'sphinx.ext.autodoc'
   - 'sphinx.ext.napoleon'
   - 'sphinx.ext.viewcode'
-  - 'sphinx.ext.autosummary'
-  - 'autoapi.extension'
 
 exclude_patterns: [".pytest_cache/*"]
